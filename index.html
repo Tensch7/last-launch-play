@@ -93,7 +93,7 @@ body {
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="index.icon.png" />
 <link rel="apple-touch-icon" href="index.apple-touch-icon.png"/>
 <link rel="manifest" href="index.manifest.json">
-<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Last Launch"><meta name="theme-color" content="#000000">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Last Launch"><meta name="theme-color" content="#000000"><style>html,body{margin:0;overflow:hidden;background:#000}#canvas{position:fixed;left:0;top:0;transform-origin:0 0}</style><script>(function(){function fit(){var c=document.getElementById('canvas');if(!c)return;var w=window.innerWidth,h=window.innerHeight;var touch=('ontouchstart' in window)||navigator.maxTouchPoints>0;var rot=touch&&h>w;var W=rot?h:w,H=rot?w:h;var r=window.devicePixelRatio||1;var cw=Math.round(W*r),ch=Math.round(H*r);if(c.width!==cw)c.width=cw;if(c.height!==ch)c.height=ch;c.style.width=W+'px';c.style.height=H+'px';c.style.transform=rot?'rotate(90deg) translateY(-100%)':'';window.llRotated=rot;}window.llFit=fit;window.addEventListener('resize',fit);window.addEventListener('orientationchange',function(){fit();setTimeout(fit,300);setTimeout(fit,900);});setInterval(fit,700);document.addEventListener('DOMContentLoaded',fit);})();</script>
 	</head>
 	<body>
 		<canvas id="canvas">
@@ -112,7 +112,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":8138016,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":8138896,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"index.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
